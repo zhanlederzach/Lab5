@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SnakeII
 {
-    public interface IDrawable
+    public interface IDrawable // интерфейс, метод которого должен быть реализован везде
     {
         void Draw();
     }

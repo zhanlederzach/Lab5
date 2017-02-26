@@ -6,12 +6,13 @@ using System.Threading.Tasks;
 
 namespace SnakeII
 {
-    public class Point
+	[Serializable]//сериализуем
+	public class Point
     {
         public int x;
         public int y;
 
-        public Point()
+        public Point()//для хмл сериализации
         {
 
         }
@@ -20,7 +21,7 @@ namespace SnakeII
             this.x = x;
             this.y = y;
         }
-        public override bool Equals(object obj)
+        public override bool Equals(object obj)//операция равенства для точек с координатами
         {
             Point o = obj as Point;
             if (this.x == o.x && this.y == o.y) return true;
